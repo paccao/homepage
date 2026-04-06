@@ -17,4 +17,24 @@ const { Content } = await render(post);
 
 <BlogPost {...post.data}>
     <Content />
+    <hr
+        style="height: 2px; margin: 40px auto; border-radius: 50%; background-color:var(--accent)"
+    />
+    <section style="display:flex; gap: 1vw;">
+        <figure>
+            <img
+                src="/src/assets/profile-picture.jpeg"
+                alt="A profile picture of myself"
+                style="max-width: 100px; height:100px; border-radius: 50%; object-fit: cover; aspect-ratio: 1/1;"
+            />
+        </figure>
+        <p>
+            Hi, I'm Joel. I build websites, kubernetes clusters, linux and containers-related things
+            based in Sweden. You can follow this blog using RSS, see some of my work on <a
+                href="https://github.com/paccao">Github</a
+            > or connect with me on <a href="https://www.linkedin.com/in/joel-plumppu-254013202/"
+                >LinkedIn</a
+            >.
+        </p>
+    </section>
 </BlogPost>

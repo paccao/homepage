@@ -5,11 +5,10 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
     <nav>
-        <h2><a href="/">{SITE_TITLE}</a></h2>
+        <h2 style="color: var(--accent-dark)"><a href="/">{SITE_TITLE}</a></h2>
         <div class="internal-links">
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/blog">Blog</HeaderLink>
-            <HeaderLink href="/about">About</HeaderLink>
         </div>
         <div class="social-links">
             <a href="https://github.com/paccao" target="_blank">
@@ -67,6 +66,7 @@ import HeaderLink from "./HeaderLink.astro";
     .social-links,
     .social-links a {
         display: flex;
+        color: var(--black);
     }
     @media (max-width: 720px) {
         .social-links {

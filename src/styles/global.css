@@ -47,6 +47,7 @@ main {
     width: 720px;
     max-width: calc(100% - 2em);
     margin: auto;
+    min-height: 50vh;
     padding: 3em 1em;
 }
 h1,

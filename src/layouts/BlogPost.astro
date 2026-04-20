@@ -8,7 +8,7 @@ import Header from "../components/Header.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, figCaption } = Astro.props;
 ---
 
 <html lang="en">
@@ -21,14 +21,21 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                 margin: 0;
             }
             .hero-image {
-                width: 50%;
+                width: 90%;
                 margin: auto;
             }
             .hero-image img {
                 display: block;
+                width: auto;
                 margin: 0 auto;
                 border-radius: 12px;
                 box-shadow: var(--box-shadow);
+            }
+            .hero-image figcaption {
+                margin: 0.5em 0em;
+                color: rgb(var(--gray));
+                text-align: right;
+                font-size: 14px;
             }
             .prose {
                 width: 720px;
@@ -53,6 +60,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             .last-updated-on {
                 font-style: italic;
             }
+            @media (width >= 960px) {
+                .hero-image {
+                    width: 50%;
+                    margin: auto;
+                }
+            }
         </style>
     </head>
 
@@ -61,7 +74,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         <main>
             <article>
                 <div class="hero-image">
-                    {heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+                    {heroImage && (
+                    <Image width={1020} height={510} src={heroImage} alt="" />
+                    <figcaption>{figCaption}</figcaption>)}
                 </div>
                 <div class="prose">
                     <div class="title">

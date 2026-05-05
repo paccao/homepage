@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE } from "../consts";
+import { SITE_TITLE, GITHUB_PAGES_PATH_PREFIX } from "../consts";
 import HeaderLink from "./HeaderLink.astro";
 ---
 
@@ -7,8 +7,8 @@ import HeaderLink from "./HeaderLink.astro";
     <nav>
         <h2 style="color: var(--accent-dark)"><a href="/">{SITE_TITLE}</a></h2>
         <div class="internal-links">
-            <HeaderLink href="/homepage/">$whoami</HeaderLink>
-            <HeaderLink href="/homepage/blog">Blog</HeaderLink>
+            <HeaderLink href={GITHUB_PAGES_PATH_PREFIX + "/"}>$whoami</HeaderLink>
+            <HeaderLink href={GITHUB_PAGES_PATH_PREFIX + "/blog"}>Blog</HeaderLink>
         </div>
         <div class="social-links">
             <a href="https://github.com/paccao" target="_blank">

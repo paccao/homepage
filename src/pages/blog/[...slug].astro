@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
+import profilePic from "../../assets/profile-picture.jpeg";
 
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
@@ -23,7 +24,7 @@ const { Content } = await render(post);
     <section style="display:flex; gap: 1vw;">
         <figure>
             <img
-                src="../../assets/profile-picture.jpeg"
+                src={profilePic.src}
                 alt="A profile picture of myself"
                 style="max-width: 100px; height:100px; border-radius: 50%; object-fit: cover; aspect-ratio: 1/1;"
             />

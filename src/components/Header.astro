@@ -7,9 +7,9 @@ import HeaderLink from "./HeaderLink.astro";
     <nav>
         <h2 style="color: var(--accent-dark)"><a href="/">{SITE_TITLE}</a></h2>
         <div class="internal-links">
-            <HeaderLink href={GITHUB_PAGES_PATH_PREFIX + "/"}
-                ><span style="color:var(--accent)">$</span> whoami</HeaderLink
-            >
+            <HeaderLink href={GITHUB_PAGES_PATH_PREFIX + "/"}>
+                <span style="color:var(--accent)">$</span> whoami
+            </HeaderLink>
             <HeaderLink href={GITHUB_PAGES_PATH_PREFIX + "/blog"}>Blog</HeaderLink>
         </div>
         <div class="social-links">

@@ -3,7 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
 import type { ImageMetadata } from "astro";
-import { GITHUB_PAGES_PATH_PREFIX, isDev, SITE_TITLE } from "../consts";
+import { GITHUB_PAGES_PATH_PREFIX, SITE_TITLE } from "../consts";
 
 interface Props {
     title: string;
@@ -23,23 +23,23 @@ const { title, description } = Astro.props;
 <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href={isDev ? "/public/apple-touch-icon.png" : "/apple-touch-icon.png"}
+    href={GITHUB_PAGES_PATH_PREFIX + "/apple-touch-icon.png"}
 />
 <link
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href={isDev ? "/public/favicon-32x32.png" : "/favicon-32x32.png"}
+    href={GITHUB_PAGES_PATH_PREFIX + "/favicon-32x32.png"}
 />
 <link
     rel="icon"
     type="image/png"
     sizes="16x16"
-    href={isDev ? "/public/favicon-16x16.png" : "/favicon-16x16.png"}
+    href={GITHUB_PAGES_PATH_PREFIX + "/favicon-16x16.png"}
 />
-<link rel="manifest" href="/site.webmanifest" />
+<link rel="manifest" href={GITHUB_PAGES_PATH_PREFIX + "/site.webmanifest"} />
 
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="sitemap" href={GITHUB_PAGES_PATH_PREFIX + "/sitemap-index.xml"} />
 <link
     rel="alternate"
     type="application/rss+xml"

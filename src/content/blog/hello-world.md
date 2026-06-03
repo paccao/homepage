@@ -6,7 +6,7 @@ heroImage: '../../assets/gustav-gullstrand-kJBEChl3iUI-unsplash.jpg'
 figCaption: 'Photo by <a href="https://unsplash.com/@outoforbit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustav Gullstrand</a> on <a href="https://unsplash.com/photos/a-forest-filled-with-lots-of-tall-trees-kJBEChl3iUI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
 
-Welcome to my little corner of the internet. My name is Joel and I am a system developer from Sweden.
+Welcome to my corner of the internet. My name is Joel and I am a system developer from Sweden.
 
 I made this blog to document different projects I'm working on both because it is fun to share but also for myself as a journal that I can look back on in the future.
 

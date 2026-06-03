@@ -5,7 +5,7 @@ import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
-import { GITHUB_PAGES_PATH_PREFIX, SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
 const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -94,7 +94,7 @@ const posts = (await getCollection("blog")).sort(
                     {
                         posts.map((post) => (
                             <li>
-                                <a href={`${GITHUB_PAGES_PATH_PREFIX}/blog/${post.id}/`}>
+                                <a href={`/blog/${post.id}/`}>
                                     {post.data.heroImage && (
                                         <Image
                                             width={720}
@@ -106,7 +106,9 @@ const posts = (await getCollection("blog")).sort(
                                     )}
                                     <h4 class="title">{post.data.title}</h4>
                                     <p class="date">
-                                        <FormattedDate date={post.data.pubDate} />
+                                        <FormattedDate
+                                            date={post.data.pubDate}
+                                        />
                                     </p>
                                 </a>
                             </li>

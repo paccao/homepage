@@ -3,7 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
 import type { ImageMetadata } from "astro";
-import { GITHUB_PAGES_PATH_PREFIX, SITE_TITLE } from "../consts";
+import { SITE_TITLE } from "../consts";
 
 interface Props {
     title: string;
@@ -20,26 +20,12 @@ const { title, description } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href={GITHUB_PAGES_PATH_PREFIX + "/apple-touch-icon.png"}
-/>
-<link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href={GITHUB_PAGES_PATH_PREFIX + "/favicon-32x32.png"}
-/>
-<link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href={GITHUB_PAGES_PATH_PREFIX + "/favicon-16x16.png"}
-/>
-<link rel="manifest" href={GITHUB_PAGES_PATH_PREFIX + "/site.webmanifest"} />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
-<link rel="sitemap" href={GITHUB_PAGES_PATH_PREFIX + "/sitemap-index.xml"} />
+<link rel="sitemap" href="/sitemap-index.xml" />
 <link
     rel="alternate"
     type="application/rss+xml"
@@ -51,14 +37,14 @@ const { title, description } = Astro.props;
 <!-- Font preloads -->
 <link
     rel="preload"
-    href={GITHUB_PAGES_PATH_PREFIX + "/fonts/atkinson-regular.woff"}
+    href="/fonts/atkinson-regular.woff"
     as="font"
     type="font/woff"
     crossorigin
 />
 <link
     rel="preload"
-    href={GITHUB_PAGES_PATH_PREFIX + "/fonts/atkinson-bold.woff"}
+    href="/fonts/atkinson-bold.woff"
     as="font"
     type="font/woff"
     crossorigin

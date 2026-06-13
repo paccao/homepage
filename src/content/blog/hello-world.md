@@ -1,7 +1,7 @@
 ---
 title: 'Hello world!'
 description: 'My first blog post, with an introduction who I am and what this blog is for.'
-pubDate: 'Apr 19 2026'
+pubDate: '19 April 2026'
 heroImage: '../../assets/gustav-gullstrand-kJBEChl3iUI-unsplash.jpg'
 figCaption: 'Photo by <a href="https://unsplash.com/@outoforbit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gustav Gullstrand</a> on <a href="https://unsplash.com/photos/a-forest-filled-with-lots-of-tall-trees-kJBEChl3iUI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---

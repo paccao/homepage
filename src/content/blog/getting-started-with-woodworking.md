@@ -1,5 +1,5 @@
 ---
-title: 'Doomscroll, a story about how I got started with woodworking'
+title: 'How doomscrolling led me to get started with woodworking'
 description: 'A little story about how I got started with woodworking.'
 pubDate: '1 Jul 2026'
 heroImage: '../../assets/gustav-gullstrand-kJBEChl3iUI-unsplash.jpg'
@@ -10,7 +10,9 @@ In the summer of 2022 me and my grandpa, who has worked as a carpenter most of h
 
 We got started early in the morning, planning the build. Over the span of two days we cut, sanded and glued together planks of wood to create the tabletop aswell as creating the legs. It was a really fun process. It requires a great attention to detail and focus which makes it a bit therapeutic. You are just in your head and nothing matters more in the world than the bit of wood in front of you.
 
-<img>
+Unfortunately, this is the best picture I could find of the table, because right now its sitting unscrewed, in a storage unit.
+
+<img src='/public/kitchen-table.jpg' placeholder="Kitchen table"/>
 
 After the project was done I didn't really have any plans to continue with woodworking, it was just a fun weekend project for me and a way to spend time with my grandparents. But as it turns out, the future had other plans for me.
 

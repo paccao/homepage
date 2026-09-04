@@ -2,6 +2,7 @@
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
 import profilePic from "../../assets/profile-picture.jpeg";
+import Prose from "../../components/Prose.astro";
 
 export async function getStaticPaths() {
     const posts = await getCollection("blog");
@@ -17,10 +18,10 @@ const { Content } = await render(post);
 ---
 
 <BlogPost {...post.data}>
-    <Content />
-    <hr
-        style="height: 2px; margin: 40px auto; border-radius: 50%; background-color:var(--accent)"
-    />
+    <Prose>
+        <Content />
+    </Prose>
+    <hr style="height: 2px; margin: 40px auto; border-radius: 50%; background-color:var(--accent)" />
     <section style="display:flex; gap: 1vw;">
         <figure>
             <img
@@ -30,12 +31,11 @@ const { Content } = await render(post);
             />
         </figure>
         <p>
-            Hi, I'm Joel. I like to tinker with computers, electronics and woodworking. You can
-            follow this blog using RSS, see some of my work on <a href="https://github.com/paccao"
-                >Github</a
-            > or connect with me on <a href="https://www.linkedin.com/in/joel-plumppu-254013202/"
-                >LinkedIn</a
+            Hi, I'm Joel. I like to tinker with computers, electronics and woodworking. You can follow this blog using
+            RSS, see some of my work on <a href="https://github.com/paccao">Github</a> or connect with me on <a
+                href="https://www.linkedin.com/in/joel-plumppu-254013202/">LinkedIn</a
             >.
         </p>
     </section>
 </BlogPost>
+<style></style>
